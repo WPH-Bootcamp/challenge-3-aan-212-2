@@ -4,13 +4,417 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3 - Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- ========== NAVBAR ========== -->
+  <body
+    class="m-0 box-border bg-[linear-gradient(180deg,_#000000_17.55%,_rgba(33,10,94,1)_136.21%)] font-inter text-white"
+  >
+    <header
+      class="relative z-[100] grid h-[100px] grid-cols-[1fr_auto] items-center px-[25px] lg:grid-cols-3 lg:px-[150px]"
+    >
+      <div
+        class="z-[1001] text-[24px] font-bold leading-[36px] justify-self-start"
+      >
+        WPH 30_AAN RIYANTO
+      </div>
 
-    <!-- ========== HERO SECTION ========== -->
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
-    <!-- ========== FOOTER ========== -->
+      <label
+        for="menu-toggle"
+        class="z-[1001] ml-auto flex cursor-pointer flex-col gap-[5px] lg:hidden"
+      >
+        <span
+          class="block h-[3px] w-[25px] bg-white transition duration-300 peer-checked:translate-y-[8px] peer-checked:rotate-45"
+        ></span>
+        <span
+          class="block h-[3px] w-[25px] bg-white transition duration-300 peer-checked:opacity-0"
+        ></span>
+        <span
+          class="block h-[3px] w-[25px] bg-white transition duration-300 peer-checked:-translate-y-[8px] peer-checked:-rotate-45"
+        ></span>
+      </label>
+
+      <nav
+        class="fixed left-0 top-0 flex h-screen w-full translate-x-full flex-col items-start gap-[30px] bg-black px-[30px] pt-[100px] transition duration-300 peer-checked:translate-x-0 lg:static lg:col-start-2 lg:flex lg:h-auto lg:w-auto lg:translate-x-0 lg:flex-row lg:items-center lg:justify-center lg:gap-[40px] lg:bg-transparent lg:p-0"
+      >
+        <a
+          href="#"
+          class="text-[14px] text-white no-underline transition duration-300 hover:text-[#7b5cff]"
+          >About</a
+        >
+        <a
+          href="#"
+          class="text-[14px] text-white no-underline transition duration-300 hover:text-[#7b5cff]"
+          >Service</a
+        >
+        <a
+          href="#"
+          class="text-[14px] text-white no-underline transition duration-300 hover:text-[#7b5cff]"
+          >Our Work</a
+        >
+        <a
+          href="#"
+          class="text-[14px] text-white no-underline transition duration-300 hover:text-[#7b5cff]"
+          >Team</a
+        >
+
+        <a
+          href="#"
+          class="mt-[20px] inline-block w-full rounded-[25px] bg-[#421abc] px-[12px] py-[12px] text-center text-[14px] text-white font-normal no-underline transition duration-300 hover:bg-[#5a33e6] lg:hidden"
+        >
+          Contact Us
+        </a>
+      </nav>
+
+      <a
+        href="#"
+        class="hidden justify-self-end rounded-[25px] bg-[#421abc] px-[25px] py-[10px] text-[14px] text-white no-underline transition duration-300 hover:bg-[#5a33e6] lg:inline-block"
+      >
+        Contact Us
+      </a>
+    </header>
+
+    <!-- ================= SECTION 1 ================= -->
+
+    <section
+      class="relative block min-h-[750px] w-full bg-[linear-gradient(180deg,_#000000_17.55%,_rgba(33,10,94,1)_136.21%)] px-0 pt-[40px] text-white md:pt-[50px] lg:pt-[20px]"
+    >
+      <div
+        class="flex w-full max-w-[1440px] flex-col gap-[10px] px-[25px] py-[40px] md:px-[25px] lg:px-[100px] lg:py-[200px]"
+      >
+        <h1 class="text-[36px] font-bold leading-[48px] lg:text-[40px]">
+          Build with the <em>Future.</em>
+        </h1>
+
+        <p class="max-w-[400px] text-[16px] leading-[30px] text-[#717680]">
+          From building sleek websites and mobile apps to integrating AI
+          solutions, we help brands turn ideas into powerful digital experiences
+          that connect, engage, and scale.
+        </p>
+
+        <a
+          href="#"
+          class="mt-[20px] inline-block w-full rounded-[180px] bg-[#421abc] px-[5px] py-[10px] text-center text-[14px] font-semibold leading-[28px] text-white no-underline transition duration-300 hover:bg-[#5a33e6] md:max-w-[140px]"
+        >
+          Let's Talk
+        </a>
+
+        <img
+          src="../assets/images/hand.png"
+          class="relative mx-auto mt-[30px] block w-[90%] translate-y-[40px] md:mt-[80px] md:mb-[-50px] lg:absolute lg:right-[200px] lg:bottom-0 lg:mt-0 lg:mb-0 lg:w-[30%] lg:translate-y-[0px]"
+          alt="phone"
+        />
+      </div>
+    </section>
+
+    <section class="w-full bg-black">
+      <div
+        class="mx-auto flex max-w-[1440px] flex-col items-center gap-[32px] px-[25px] py-[60px] text-center lg:px-[140px] lg:py-[80px]"
+      >
+        <h2
+          class="text-center text-[28px] font-bold leading-[38px] tracking-[-0.02em]"
+        >
+          Who We Are
+        </h2>
+
+        <p
+          class="text-center font-bold text-[18px] leading-[28px] text-[#717680]"
+        >
+          We're a group of tech students trained in
+          <span class="text-white">building real-world digital products.</span>
+          From coding to design, we
+          <span class="text-white"
+            >craft modern solutions for modern problems.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2 ================= -->
+
+    <section class="w-full bg-black">
+      <div
+        class="mx-auto flex max-w-[1440px] flex-col items-center gap-[20px] px-[25px] py-[60px] lg:px-[140px] lg:py-[80px]"
+      >
+        <h2
+          class="text-center text-[28px] font-bold leading-[38px] tracking-[-0.02em]"
+        >
+          What We Do
+        </h2>
+
+        <p class="mb-[50px] text-center text-[14px] font-normal text-[#9ca3af]">
+          We offer simple tech solutions to help your ideas grow.
+        </p>
+
+        <div class="grid w-full grid-cols-2 gap-[30px] lg:grid-cols-3">
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img
+              src="../assets/icons/Website.png"
+              class="w-auto"
+              alt="web icon"
+            />
+            <h3 class="text-[18px] font-bold leading-[32px]">
+              Web Development
+            </h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              Modern websites using HTML, CSS, JavaScript, and frameworks.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img src="../assets/icons/Mobile.png" class="w-auto" alt="mobile" />
+            <h3 class="text-[18px] font-bold leading-[32px]">
+              App Development
+            </h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              Mobile and desktop apps tailored for your needs.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img src="../assets/icons/AI.png" class="w-auto" alt="ai" />
+            <h3 class="text-[18px] font-bold leading-[32px]">AI Integration</h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              Smart solutions using AI-powered tools and automation.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img src="../assets/icons/Paint.png" class="w-auto" alt="design" />
+            <h3 class="text-[18px] font-bold leading-[32px]">UI/UX Design</h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              Clean and functional designs for better user experience.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img
+              src="../assets/icons/Vector.png"
+              class="w-auto"
+              alt="landing"
+            />
+            <h3 class="text-[18px] font-bold leading-[32px]">
+              Landing Page Design
+            </h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              High-converting landing pages for your product or business.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-[20px] rounded-[14px] border border-[#1f1f1f] bg-[#050505] p-[30px] text-center transition duration-300 hover:-translate-y-[5px] hover:border-[#6d4aff]"
+          >
+            <img src="../assets/icons/CMS.png" class="w-auto" alt="cms" />
+            <h3 class="text-[18px] font-bold leading-[32px]">
+              CMS Integration
+            </h3>
+            <p class="text-[14px] font-normal leading-[28px] text-[#9ca3af]">
+              Easy-to-manage websites with WordPress or Webflow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3 ================= -->
+
+    <section class="w-full bg-black">
+      <div
+        class="mx-auto flex max-w-[1440px] flex-col items-center px-[25px] py-[60px] text-center lg:px-[140px] lg:py-[100px]"
+      >
+        <h2
+          class="text-center text-[28px] font-bold leading-[38px] tracking-[-0.02em]"
+        >
+          Our Work
+        </h2>
+        <p
+          class="mb-[50px] mt-[10px] text-center text-[16px] font-normal leading-[30px] text-[#9ca3af]"
+        >
+          See what we've built with passion and purpose
+        </p>
+
+        <div
+          class="flex flex-col items-center gap-[40px] lg:flex-row lg:flex-wrap lg:justify-center"
+        >
+          <div
+            class="flex w-full max-w-[360px] flex-col items-start justify-center transition duration-300 hover:-translate-y-[5px] lg:w-[320px] lg:max-w-none"
+          >
+            <img
+              src="../assets/images/Frame 1618873821.png"
+              class="block w-full rounded-[16px] shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+              alt="portfolio 1"
+            />
+            <h3 class="mt-[12px] text-[16px] font-medium">Portofolio 1</h3>
+          </div>
+
+          <div
+            class="flex w-full max-w-[360px] flex-col items-start justify-center transition duration-300 hover:-translate-y-[5px] lg:w-[320px] lg:max-w-none"
+          >
+            <img
+              src="../assets/images/Frame 1618873821 (2).png"
+              class="block w-full rounded-[16px] shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+              alt="portfolio 2"
+            />
+            <h3 class="mt-[12px] text-[16px] font-medium">Portofolio 2</h3>
+          </div>
+
+          <div
+            class="flex w-full max-w-[360px] flex-col items-start justify-center transition duration-300 hover:-translate-y-[5px] lg:w-[320px] lg:max-w-none"
+          >
+            <img
+              src="../assets/images/Frame 1618873821 (1).png"
+              class="block w-full rounded-[16px] shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+              alt="portfolio 3"
+            />
+            <h3 class="mt-[12px] text-[16px] font-medium">Portofolio 3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4 ================= -->
+
+    <section class="bg-black px-[20px] py-[80px] text-center text-white">
+      <div class="mx-auto max-w-[1100px]">
+        <h2
+          class="mb-[10px] text-[24px] font-bold leading-[56px] lg:text-[40px]"
+        >
+          Meet The Team
+        </h2>
+        <p
+          class="mb-[50px] text-[13px] font-normal leading-[32px] text-[#9ca3af] lg:text-[18px]"
+        >
+          A group of future-ready tech makers.
+        </p>
+
+        <div class="grid grid-cols-2 gap-[20px] lg:grid-cols-4 lg:gap-[40px]">
+          <div class="text-center">
+            <img
+              src="../assets/images/Ellipse 7.png"
+              class="mx-auto mb-[15px] h-[120px] w-[120px] rounded-full object-cover lg:h-[150px] lg:w-[150px]"
+              alt="Jasper Kim"
+            />
+            <h3 class="mb-[5px] text-[20px] font-bold leading-[34px]">
+              Jasper Kim
+            </h3>
+            <p class="text-[16px] font-normal leading-[30px] text-[#9ca3af]">
+              Project Manager
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="../assets/images/Ellipse 7aa.png"
+              class="mx-auto mb-[15px] h-[120px] w-[120px] rounded-full object-cover lg:h-[150px] lg:w-[150px]"
+              alt="Alex Jonathan"
+            />
+            <h3 class="mb-[5px] text-[20px] font-bold leading-[34px]">
+              Alex Jonathan
+            </h3>
+            <p class="text-[16px] font-normal leading-[30px] text-[#9ca3af]">
+              Full-stack Developer
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="../assets/images/Ellipse 7 (1).png"
+              class="mx-auto mb-[15px] h-[120px] w-[120px] rounded-full object-cover lg:h-[150px] lg:w-[150px]"
+              alt="Mario Lopez"
+            />
+            <h3 class="mb-[5px] text-[20px] font-bold leading-[34px]">
+              Mario Lopez
+            </h3>
+            <p class="text-[16px] font-normal leading-[30px] text-[#9ca3af]">
+              UI/UX Designer
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="../assets/images/Ellipse 7 (2).png"
+              class="mx-auto mb-[15px] h-[120px] w-[120px] rounded-full object-cover lg:h-[150px] lg:w-[150px]"
+              alt="Jasper Kim"
+            />
+            <h3 class="mb-[5px] text-[20px] font-bold leading-[34px]">
+              Jasper Kim
+            </h3>
+            <p class="text-[16px] font-normal leading-[30px] text-[#9ca3af]">
+              Data Scientist
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5/FORM ================= -->
+    <section
+      class="w-full bg-black px-[25px] py-[60px] lg:px-[20px] lg:py-[100px]"
+    >
+      <div class="mx-auto max-w-[600px] text-center lg:max-w-[600px]">
+        <h2
+          class="mb-[10px] text-[24px] font-bold leading-[56px] lg:text-[40px]"
+        >
+          Let's Collaborate
+        </h2>
+        <p
+          class="mb-[35px] text-[13px] font-normal leading-[32px] text-[#9ca3af] lg:mb-[50px] lg:text-[18px]"
+        >
+          Need a tech team? We're ready to help
+        </p>
+
+        <form class="flex flex-col gap-[16px] text-left lg:gap-[18px]">
+          <label class="text-[13px] font-medium">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="w-full rounded-[8px] border border-[#1f2937] bg-black px-[12px] py-[12px] text-[13px] text-white outline-none lg:px-[14px] lg:text-[14px]"
+          />
+
+          <label class="text-[13px] font-medium">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full rounded-[8px] border border-[#1f2937] bg-black px-[12px] py-[12px] text-[13px] text-white outline-none lg:px-[14px] lg:text-[14px]"
+          />
+
+          <label class="text-[13px] font-medium">Message</label>
+          <textarea
+            placeholder="Enter your message"
+            class="h-[110px] w-full resize-none rounded-[8px] border border-[#1f2937] bg-black px-[12px] py-[12px] text-[13px] text-white outline-none lg:h-[120px] lg:px-[14px] lg:text-[14px]"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="mt-[10px] w-full cursor-pointer rounded-[25px] bg-[#421abc] px-[14px] py-[14px] text-[14px] font-semibold leading-[30px] text-white transition duration-300 hover:opacity-90 lg:text-[16px]"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+      class="border-t border-[#1f2937] bg-black px-[10px] py-[20px] text-center text-[16px] font-normal leading-[30px] text-[#717680] lg:px-[10px] lg:py-[25px]"
+    >
+      <p>© 2025 Web Programming Hack. All rights reserved.</p>
+    </footer>
   </body>
 </html>
